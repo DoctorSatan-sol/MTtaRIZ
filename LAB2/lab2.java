@@ -1,22 +1,11 @@
 class Lab2 {
     public static void main(String[] args) {
-        int n = 5;
+        int n = 10;
         int m = 3;
-        tree(n);
+        Tree tree = new Tree(n);
+        tree.draw();
         System.out.println();
         array(n, m);
-    }
-
-    public static void tree(int n) {
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print(" ");
-            }
-            for (int k = 1; k <= 2 * i -1; k++) {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
     }
 
     public static void array(int n, int m) {
